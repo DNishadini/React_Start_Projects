@@ -1,4 +1,5 @@
 import React from "react";
+import Fruit from "./Fruit";
 
 export default function Fruits() {
   //const fruits = ["Apple", "Mango", "Banana"];
@@ -11,9 +12,12 @@ export default function Fruits() {
     <div>
       <ul>
         {fruits.map((fruit) => (
-          <li key={fruit.name}>
-            {fruit.name} ${fruit.price} {fruit.color}
-          </li>
+          <Fruit
+            key={fruit.name}
+            name={fruit.name}
+            price={fruit.price}
+            color={fruit.color}
+          />
         ))}
       </ul>
     </div>
