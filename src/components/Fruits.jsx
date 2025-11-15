@@ -11,7 +11,7 @@ export default function Fruits() {
     <div>
       <ul>
         {fruits.map((fruit) => (
-          <li key={fruit}>
+          <li key={fruit.name}>
             {fruit.name} ${fruit.price} {fruit.color}
           </li>
         ))}
